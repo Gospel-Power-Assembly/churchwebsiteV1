@@ -1,0 +1,22 @@
+* {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+/* @font-face {
+  font-family: "Damion";
+  src: url("../fonts/Damion-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "Damion-Regular";
+  src: url("../fonts/Damion-Regular.eot"),
+    url("../fonts/Damion-Regular.eot?#") format("embedded-opentype"),
+    url("../fonts/Damion-Regular.woff") format("woff"),
+    url("../fonts/Damion-Regular.ttf") format("truetype");
+}
+.fontUpdate {
+  font-family: "Damion-Regular" !important;
+  /* color: red !important; */
+}
