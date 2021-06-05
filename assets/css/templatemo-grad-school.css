@@ -313,6 +313,12 @@ a.menu-link {
   z-index: -1;
 }
 
+#bannerImg{
+  height: 30rem;
+  min-width: 100%;
+  max-width: 100%;
+}
+
 #bg-video::-webkit-media-controls {
   display: none !important;
 }
