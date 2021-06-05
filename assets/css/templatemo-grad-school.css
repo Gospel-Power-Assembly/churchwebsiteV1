@@ -318,12 +318,15 @@ a.menu-link {
 }
 
 .video-overlay {
-  position: absolute;
-  background-color: rgba(22, 34, 57, 0.85);
-  top: 0;
-  left: 0;
-  bottom: 7px;
-  width: 100%;
+  /* background-color: rgba(22, 34, 57, 0.85  ); */
+ 
+
+      position: absolute;
+    background-color: rgba(52, 39, 66, 0.6);
+    top: 0;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
 }
 
 .main-banner .caption {
