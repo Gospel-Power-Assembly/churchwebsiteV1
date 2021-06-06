@@ -174,7 +174,7 @@ a.menu-link {
 }
 
 .main-header {
-  background-color: rgba(22, 34, 57, 0.95);
+  background-color: rgba(22, 34, 57, 1);
   /* height: 80px; */
   position: sticky;
   z-index: 12;
@@ -345,24 +345,24 @@ a.menu-link {
   position: absolute;
   width: 80%;
   left: 50%;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
 }
 
 .main-banner .caption h6 {
   margin-top: 0px;
   font-size: 18px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 600;
   color: #fff;
   letter-spacing: 1px;
 }
 
 .main-banner .caption h2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
   font-size: 64px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
