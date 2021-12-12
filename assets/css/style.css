@@ -20,3 +20,23 @@
   font-family: "Damion-Regular" !important;
   /* color: red !important; */
 }
+
+.sermons-header {
+  color: white;
+  padding: auto;
+  margin: 20px 0 20px 0;
+}
+
+.events-header {
+  color: white;
+  padding: auto;
+  margin: 0 0 20px 0;
+}
+
+.sermon-content {
+  /* display: flex !important; */
+}
+
+.sermon-wrapper {
+  display: flex !important;
+}
