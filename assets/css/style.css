@@ -4445,7 +4445,7 @@ ul.author-s-medias{
     border: 3px solid #e5e5e5;
     border-radius: 100%;
     min-height: 480px;
-    margin-left: 120px;
+    margin-left: 0px !important;
 }
 .nav-c-slider:before {
     content: "";
