@@ -1,724 +1,679 @@
 <!DOCTYPE html>
 
 <html lang="zxx">
-
-<head>
-
-	<!-- Meta Options -->
-
-	<meta charset="utf-8">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
-	<!-- Title -->
-
-	<title>Pastor Detail</title>
-
-
-	<!-- Favicon -->
-
-	<link rel="icon" type="image/x-icon" href="https://via.placeholder.com/60x50">
-
-
-	<!-- Bootstrap -->
-
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-
-
-	<!-- Animate on scroll -->
-
-	<link rel="stylesheet" type="text/css" href="assets/css/aos.css">
-
-
-	<!-- Stylesheet -->
-
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-
-
-	<!-- Colors -->
-
-	<link rel="stylesheet" type="text/css" href="assets/css/color.css">
-
-
-
-	<!-- Responsive -->
-
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-
-
-</head>
-
-<body>
-
-	<!-- Loader Start -->
-	<div class="preloader" id="preloader">
-	  <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-	    <path d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"></path>
-	  </svg>
-	  <div class="inner">
-	    <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
-	    <figure><img src="https://via.placeholder.com/85x110" alt="Image"></figure>
-	    <small>Loading</small> </div>
-	  <!-- end inner --> 
-	</div>
-
-	<!-- Loader End -->
-	<!-- Header One Start -->
-
-	<header class="header-one">
-
-		<div class="top-bar">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-lg-9">
-
-						<ul class="login">
-
-							<li><a href="JavaScript:void(0)"><img src="assets/images/user-profile.svg" alt="User Profile">Login or Register</a></li>
-
-							<li><a href="JavaScript:void(0)"><img src="assets/images/bell.svg" alt="Bell">One in Christ Jesus, engaged in parent’s mission, empowered by the Spirit.</a></li>
-
-						</ul>
-
-					</div>
-
-					<div class="col-lg-2 offset-1">
-
-						<ul class="social-medias">
-
-							<li><a href="JavaScript:void(0)"><img src="assets/images/facebook.svg" alt="facebook"></a></li>
-
-							<li><a href="JavaScript:void(0)"><img src="assets/images/twitter.svg" alt="twitter"></a></li>
-
-							<li><a href="JavaScript:void(0)"><img src="assets/images/instagram.svg" alt="instagram"></a></li>
-
-						</ul>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="desktop-nav"  id="stickyHeader">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-lg-12">
-
-						<nav>
-
-							<div class="logo">
-
-								<a href="index.html">
-
-									<img src="https://via.placeholder.com/185x70" alt="Logo">
-
-								</a>
-
-							</div>
-
-							<div class="nav-bar">
-
-								<ul>
-
-								<li class="menu-item-has-children">
-
-									<a href="JavaScript:void(0)">Home</a>
-
-
-
-									<ul class="sub-menu">
-
-										<li><a href="index.html">HomeOne</a></li>
-
-										<li><a href="index-two.html">Home Two</a></li>
-
-										<li><a href="index-three.html">Home Three</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Sermons</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="sermons.html">Our Sermons</a></li>
-
-										<li><a href="sermon-detail.html">Sermons Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Events</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="events.html">Our Events</a></li>
-
-										<li><a href="event-detail.html">Event Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Blog</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="blog.html">Our Blog</a></li>
-
-										<li><a href="blog-detail.html">Blog Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Pages</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="404.html">404 Page</a></li>
-										<li><a href="about-us.html">About</a></li>
-
-										<li><a href="our-ministries.html">Our Ministries</a></li>
-
-										<li><a href="pastor-detail.html">Pastor Detail</a></li>
-
-										<li><a href="cause-detail.html">Cause Detail</a></li>
-										<li><a href="donation-page.html">Donate Now</a></li>
-										<li><a href="shop.html">Our Products</a></li>
-										<li><a href="product-detail.html">Product Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li><a href="contact-us.html">Contact</a></li>
-
-							</ul>
-
-							</div>
-
-							<div class="donation">
-
-								<a href="JavaScript:void(0)" class="pr-cart">
-
-									<svg id="Shoping-bags" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g><path d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z"/></g></svg>
-
-
-
-								</a>
-
-								<div class="cart-popup">
-
-										<ul>
-
-											<li class="d-flex align-items-center position-relative">
-
-												<div class="p-img light-bg">
-
-														<img src="https://via.placeholder.com/75x75" alt="Product Image">
-												</div>
-
-												<div class="p-data">
-
-													<h3 class="font-semi-bold">Pastoral Principles Cards</h3>
-
-													<p class="theme-clr font-semi-bold">1 x $25.00</p>
-
-												</div>
-
-												<a href="JavaScript:void(0)" id="crosss"></a>
-
-											</li>
-
-											<li class="d-flex align-items-center position-relative">
-
-												<div class="p-img light-bg">
-
-														<img src="https://via.placeholder.com/75x75" alt="Product Image">
-
-												</div>
-
-												<div class="p-data">
-
-													<h3 class="font-semi-bold">Pastoral Principles Cards</h3>
-
-													<p class="theme-clr font-semi-bold">1 x $25.00</p>
-
-												</div>
-
-												<a href="JavaScript:void(0)" id="cross"></a>
-
-											</li>
-
-										</ul>
-
-											<div class="cart-total d-flex align-items-center justify-content-between">
-
-												<span class="font-semi-bold">Total:</span>
-
-												<span class="font-semi-bold">$60.00</span>
-
-											</div>
-
-											<div class="cart-btns d-flex align-items-center justify-content-between">
-
-												<a class="font-bold" href="JavaScript:void">View Cart</a>
-
-												<a class="font-bold theme-bg-clr text-white checkout" href="JavaScript:void">Checkout</a>
-
-											</div>
-
-								</div>
-
-								<a href="JavaScript:void(0)" class="theme-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Give Now</a>
-
-							</div>
-
-							<div id="nav-icon4">
-
-							  <span></span>
-
-							  <span></span>
-
-							  <span></span>
-
-							</div>
-
-						</nav>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-		<div class="mobile-nav" id="mobile-nav">
-
-			<div class="res-log">
-
-				<a href="index.html">
-
-					<img src="https://via.placeholder.com/185x70" alt="Responsive Logo">
-
-				</a>
-
-			</div>
-
-			<ul>
-
-								<li class="menu-item-has-children">
-
-									<a href="JavaScript:void(0)">Home</a>
-
-
-
-									<ul class="sub-menu">
-
-										<li><a href="index.html">HomeOne</a></li>
-
-										<li><a href="index-two.html">Home Two</a></li>
-
-										<li><a href="index-three.html">Home Three</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Sermons</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="sermons.html">Our Sermons</a></li>
-
-										<li><a href="sermon-detail.html">Sermons Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Events</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="events.html">Our Events</a></li>
-
-										<li><a href="event-detail.html">Event Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Blog</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="blog.html">Our Blog</a></li>
-
-										<li><a href="blog-detail.html">Blog Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="menu-item-has-children"><a href="JavaScript:void(0)">Pages</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="404.html">404 Page</a></li>
-										<li><a href="about-us.html">About</a></li>
-
-										<li><a href="our-ministries.html">Our Ministries</a></li>
-
-										<li><a href="pastor-detail.html">Pastor Detail</a></li>
-
-										<li><a href="cause-detail.html">Cause Detail</a></li>
-										<li><a href="donation-page.html">Donate Now</a></li>
-										<li><a href="shop.html">Our Products</a></li>
-										<li><a href="product-detail.html">Product Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li><a href="contact-us.html">Contact</a></li>
-
-							</ul>
-
-			<a href="JavaScript:void(0)" id="res-cross"></a>
-
-		</div>
-
-	</header>
-	<!-- Header One Start -->
-
-
-
-	<!-- Banner Start -->
-
-	<section class="banner position-relative">
-
-		<div class="parallax" style="background-image: url(assets/images/church/worship.jpg);"></div>
-
-			<div class="banner-data text-center">
-
-				<h2 class="text-white font-bold">Our History</h2>
-
-				<ul class="flex-all">
-
-					<li><a href="JavaScript:void(0)" class="text-white">Home</a></li>
-
-					<li><a href="JavaScript:void(0)" class="text-white">Our History</a></li>
-
-				</ul>
-
-				<img src="assets/images/church/logo.png" alt="Heading Image">
-
-			</div>
-
-	</section>
-
-	<!-- Banner End -->
-
-
-
-	<!-- Pastor Detail Start -->
-
-	<section class="gap pastor-detail">
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="pastor-content content w-85 m-auto">
-
-					<h3>Our History </h3>
-
-					<p>The Lord started dealing with His servant, Dr. Friday Bekee about the ministry while he was still lecturing in Port Harcourt. After series of dealings from the Lord and a protracted season of prayers, in June 1993, the Lord said to him, “Go to Ikeja and pioneer the work” This was a bit curious because as at then he did not know anywhere or anybody in Ikeja. As he pondered about the possibility of this instruction, with his job and family in Port-Harcourt, he decided to step out in obedience and faith.</p>
-
-					<p>As he decided to just go and know Ikeja, he met an old friend, Pastor Femi Agiri, who told him he was living in Ogba, a suburb of Ikeja. Pastor Femi graciously welcomed him into his home.</p>
-
-					<p>As he sought the Lord in Pastor Femi’s house, not knowing what next to do or where to go, God instructed him to get a venue and start teaching to stir up a revival in the heart of His people. By the grace of God, on Saturday, November 28, 1993, the first formal prayer meeting was held at the Hilton Hotel, off Allen Avenue, Ikeja at its inception was to stir up a revival in the heart of believers and the churches, both in Nigeria and beyond. This was accomplished through prayer seminars and conferences.</p>
-					<p>Through the leading of the Lord the church arm of the ministry, called Gospel Power Assembly was born on Sunday, September 18, 1994, at Amay House, Odegbami close, Adeniyi Jones, Ikeja, Lagos. The main thrust is to Lead People to Christ and perfect (mature) them in Christ through teaching, training, and discipleship so they could be equipped for the work of the ministry. We are committed to raising faithful, fruitful disciples who are passionate to advance the kingdom of God in communities</p>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<!-- Pastor Detail End -->
-
-
-
-	<!-- Subscribe Start -->
-
-	<section class="subscribe">
-
-		<div class="container">
-
-			<div class="row align-items-center">
-
-				<div class="col-lg-5 col-md-12 col-sm-12">
-
-					<h3 class="text-white">Let’s Keep in Touch!</h3>
-
-					<p class="text-white">Subscribe to keep up with fresh news and exciting updates.</p>
-
-				</div>
-
-				<div class="col-lg-7 col-md-12 col-sm-12">
-
-					<form>
-
-						<input type="text" name="Text" placeholder="Enter Your Email Address...">
-
-						<button>Subscribe</button>
-
-					</form>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<!-- Subscribe End -->
-
-
-
-	<!-- Footer One Start -->
-
-	<footer class="gap footer-one no-bottom green-overlay">
-
-		<div class="parallax" style="background-image: url(https://via.placeholder.com/1920x670);"></div>
-
-		<div class="container">
-
-			<div class="row part-one">
-
-				<div class="col-lg-3 col-md-6 col-sm-12">
-
-					<a href="index.html">
-
-						<img class="footer-logo" src="https://via.placeholder.com/185x70" alt="footer logo">
-
-					</a>
-
-					<p class="text-white">901-947 South Ripple Creek Drive, Houston, TX 77057, USA</p>
-
-					<div class="footer-contact">
-
-						<p class="text-white"><span class="theme-clr">Telephone:</span> +1 555 1234</p>
-
-						<p class="text-white"><span class="theme-clr">Fax:</span> +1 555 4444</p>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-sm-12">
-
-					<h2 class="text-white">Quick Links</h2>
-
-					<ul class="quick-links">
-
-						<li><a href="sermons.html">Sermons & Exhortations</a></li>
-
-						<li><a href="our-ministries.html">Our Ministries</a></li>
-
-						<li><a href="events.html">Our Events</a></li>
-
-						<li><a href="sermons.html">Sermons & Exhortations</a></li>
-
-						<li><a href="pastor-detail.html">Volunteers</a></li>
-
-						<li><a href="event-detail.html">Domestic Violence</a></li>
-
-					</ul>
-
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-12">
-
-					<h2 class="text-white">Upcoming Events</h2>
-
-					<ul class="footer-events">
-
-						<li>
-
-							<figure>
-
-								<img src="https://via.placeholder.com/110x100" alt="Event Image">
-
-							</figure>
-
-							<div>
-
-								<a href="event-detail.html">Domestic Violence and Impact on Ministry</a>
-
-								<p class="post-date">Thrusday, june 4, 2021</p>
-
-							</div>
-
-						</li>
-
-						<li>
-
-							<figure>
-
-								<img src="https://via.placeholder.com/110x100" alt="Event Image 2">
-
-							</figure>
-
-							<div>
-
-								<a href="event-detail.html">Support Groups: May the God Be with</a>
-
-								<p class="post-date">Thrusday, june 4, 2021</p>
-
-							</div>
-
-						</li>
-
-					</ul>
-
-				</div>
-
-			</div>
-
-			<div class="copy-right">
-
-				<div class="social">
-
-					<ul class="social-medias">
-
-						<li><a href="JavaScript:void(0)"><img src="assets/images/facebook.svg" alt="facebook"></a></li>
-
-						<li><a href="JavaScript:void(0)"><img src="assets/images/twitter.svg" alt="twitter"></a></li>
-
-						<li><a href="JavaScript:void(0)"><img src="assets/images/instagram.svg" alt="instagram"></a></li>
-
-					</ul>
-
-				</div>
-
-				<div class="footer-rights">
-
-					<p class="text-white">© Copyright <span>2021 Blesso</span>. All Rights Reserved.</p>
-
-				</div>
-
-				
-
-			</div>
-
-		</div>
-
-	</footer>
-
-	<!-- Footer One End -->
-
-
-
-	<!-- Scroll to top -->
-
-	<button id="scrollTop" class="scrollTopStick"><svg viewBox="0 0 490.523 490.523" fill="#fff" height="15"> <path style="fill:#FFC107;" d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047 c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136 c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z"></path> <path d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151 c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0 l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></button>
-
-	<!-- Donation Modal -->
-	<div class="modal fade donation-model" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="staticBackdropLabel">Donate Now</h5>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      </div>
-	      <div class="modal-body">
-	        <div class="donation-data">
-
-				<h2>Stand Up the Church Climate Crisis</h2>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed totam rem ape eaque.</p>
-
-				<div class="donation-form">
-
-					<div class="custom-donation-amount" ><span class="text-white">$</span> <input class="donated_amount" type="number" placeholder="Custom Amount">
-
-					</div>
-
-					<ul class="list-unstyled aos-init aos-animate">
-
-						<li><a class="donating" href="JavaScript:void(0)">$<span class="donation_amount">5</span></a>
-
-						</li>
-
-						<li><a class="donating" href="JavaScript:void(0)">$<span class="donation_amount">10</span></a>
-
-						</li>
-
-						<li><a class="donating" href="JavaScript:void(0)">$<span class="donation_amount">20</span></a>
-
-						</li>
-
-						<li><a class="donating" href="JavaScript:void(0)">$<span class="donation_amount">30</span></a>
-
-						</li>
-
-					</ul>
-
-					<a class="theme-btn" href="JavaScript:void(0)">Donate Now</a>
-
-				</div>
-			</div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<!-- Jquery -->
-
-	<script src="assets/js/jquery.min.js"></script>
-
-
-	<!-- Animate on scroll Js -->
-
-	<script src="assets/js/aos.js"></script>
-
-
-	<!-- Bootstrap Js -->
-
-	<script src="assets/js/bootstrap.min.js"></script>
-
-
-	<!-- Custom Js -->
-
-	<script src="assets/js/custom.js"></script>
-
-	
-</body>
-
+  <head>
+    <!-- Meta Options -->
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+
+    <title>History</title>
+
+    <!-- Favicon -->
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://via.placeholder.com/60x50"
+    />
+
+    <!-- Bootstrap -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Colors -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/color.css" />
+
+    <!-- Responsive -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Loader Start -->
+    <div class="preloader" id="preloader">
+      <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+        <path
+          d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+        ></path>
+      </svg>
+      <div class="inner">
+        <canvas
+          class="progress-bar"
+          id="progress-bar"
+          width="200"
+          height="200"
+        ></canvas>
+        <figure>
+          <img src="assets/images/church/logo.png" alt="Image" />
+        </figure>
+        <small>Gospel Power Assembly</small>
+      </div>
+      <!-- end inner -->
+    </div>
+
+    <!-- Loader End -->
+    <!-- Header One Start -->
+
+    <header class="header-one">
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <ul class="login">
+                <!-- <li>
+                  <a href="JavaScript:void(0)"
+                    ><img
+                      src="assets/images/user-profile.svg"
+                      alt="User Profile"
+                    />Login or Register</a
+                  >
+                </li> -->
+
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/bell.svg" alt="Bell" />One in
+                    Christ Jesus, engaged in parent’s mission, empowered by the
+                    Spirit.</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 offset-1">
+              <ul class="social-medias">
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="desktop-nav" id="stickyHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav>
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/church/logo.png" alt="Logo" />
+                  </a>
+                </div>
+
+                <div class="nav-bar">
+                  <ul>
+                    <li>
+                      <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                      <a href="JavaScript:void(0)">Sermons</a>
+
+                      <ul class="sub-menu">
+                        <li><a href="sermons.html">Our Sermons</a></li>
+
+                        <li><a href="sermon-detail.html">Sermons Detail</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                      <a href="JavaScript:void(0)">Events</a>
+
+                      <ul class="sub-menu">
+                        <li><a href="events.html">Our Events</a></li>
+
+                        <li><a href="event-detail.html">Event Detail</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                      <a href="JavaScript:void(0)">About Us</a>
+
+                      <ul class="sub-menu">
+                        <li>
+                          <a href="vision.html">Mission and Vision</a>
+                        </li>
+                        <li><a href="history.html">Our History</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="contact-us.html">Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="donation">
+                  <!-- <a href="JavaScript:void(0)" class="pr-cart">
+                    <svg
+                      id="Shoping-bags"
+                      enable-background="new 0 0 512 512"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z"
+                        />
+                      </g>
+                    </svg>
+                  </a> -->
+                  <!-- 
+                  <div class="cart-popup">
+                    <ul>
+                      <li class="d-flex align-items-center position-relative">
+                        <div class="p-img light-bg">
+                          <img
+                            src="https://via.placeholder.com/75x75"
+                            alt="Product Image"
+                          />
+                        </div>
+
+                        <div class="p-data">
+                          <h3 class="font-semi-bold">
+                            Pastoral Principles Cards
+                          </h3>
+
+                          <p class="theme-clr font-semi-bold">1 x $25.00</p>
+                        </div>
+
+                        <a href="JavaScript:void(0)" id="crosss"></a>
+                      </li>
+
+                      <li class="d-flex align-items-center position-relative">
+                        <div class="p-img light-bg">
+                          <img
+                            src="https://via.placeholder.com/75x75"
+                            alt="Product Image"
+                          />
+                        </div>
+
+                        <div class="p-data">
+                          <h3 class="font-semi-bold">
+                            Pastoral Principles Cards
+                          </h3>
+
+                          <p class="theme-clr font-semi-bold">1 x $25.00</p>
+                        </div>
+
+                        <a href="JavaScript:void(0)" id="cross"></a>
+                      </li>
+                    </ul>
+
+                    <div
+                      class="cart-total d-flex align-items-center justify-content-between"
+                    >
+                      <span class="font-semi-bold">Total:</span>
+
+                      <span class="font-semi-bold">$60.00</span>
+                    </div>
+
+                    <div
+                      class="cart-btns d-flex align-items-center justify-content-between"
+                    >
+                      <a class="font-bold" href="JavaScript:void">View Cart</a>
+
+                      <a
+                        class="font-bold theme-bg-clr text-white checkout"
+                        href="JavaScript:void"
+                        >Checkout</a
+                      >
+                    </div>
+                  </div> -->
+
+                  <!-- <a
+                    href="JavaScript:void(0)"
+                    class="theme-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    >Give Now</a
+                  > -->
+                </div>
+
+                <div id="nav-icon4">
+                  <span></span>
+
+                  <span></span>
+
+                  <span></span>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobile-nav">
+        <div class="res-log">
+          <a href="index.html">
+            <img src="assets/images/church/logo.png" alt="Responsive Logo" />
+          </a>
+        </div>
+
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="menu-item-has-children">
+            <a href="JavaScript:void(0)">Sermons</a>
+
+            <ul class="sub-menu">
+              <li><a href="sermons.html">Our Sermons</a></li>
+
+              <li><a href="sermon-detail.html">Sermons Detail</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item-has-children">
+            <a href="JavaScript:void(0)">Events</a>
+
+            <ul class="sub-menu">
+              <li><a href="events.html">Our Events</a></li>
+
+              <li><a href="event-detail.html">Event Detail</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item-has-children">
+            <a href="JavaScript:void(0)">About Us</a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="vision.html">Mission and Vision</a>
+              </li>
+              <li><a href="history.html">Our History</a></li>
+              <li><a href="about-us.html">About</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+
+        <a href="JavaScript:void(0)" id="res-cross"></a>
+      </div>
+    </header>
+    <!-- Banner Start -->
+
+    <section class="banner position-relative">
+      <div
+        class="parallax"
+        style="background-image: url(assets/images/church/worship.jpg)"
+      ></div>
+
+      <div class="banner-data text-center">
+        <h2 class="text-white font-bold">Our History</h2>
+
+        <ul class="flex-all">
+          <li><a href="JavaScript:void(0)" class="text-white">Home</a></li>
+
+          <li>
+            <a href="JavaScript:void(0)" class="text-white">Our History</a>
+          </li>
+        </ul>
+
+        <img
+          src="assets/images/church/logo.png"
+          style="width: auto"
+          alt="Heading Image"
+        />
+      </div>
+    </section>
+
+    <!-- Banner End -->
+
+    <!-- Pastor Detail Start -->
+
+    <section class="gap pastor-detail">
+      <div class="container">
+        <div class="row">
+          <div class="pastor-content content w-85 m-auto">
+            <h3>Our History</h3>
+
+            <p>
+              The Lord started dealing with His servant, Dr. Friday Bekee about
+              the ministry while he was still lecturing in Port Harcourt. After
+              series of dealings from the Lord and a protracted season of
+              prayers, in June 1993, the Lord said to him, “Go to Ikeja and
+              pioneer the work” This was a bit curious because as at then he did
+              not know anywhere or anybody in Ikeja. As he pondered about the
+              possibility of this instruction, with his job and family in
+              Port-Harcourt, he decided to step out in obedience and faith.
+            </p>
+
+            <p>
+              As he decided to just go and know Ikeja, he met an old friend,
+              Pastor Femi Agiri, who told him he was living in Ogba, a suburb of
+              Ikeja. Pastor Femi graciously welcomed him into his home.
+            </p>
+
+            <p>
+              As he sought the Lord in Pastor Femi’s house, not knowing what
+              next to do or where to go, God instructed him to get a venue and
+              start teaching to stir up a revival in the heart of His people. By
+              the grace of God, on Saturday, November 28, 1993, the first formal
+              prayer meeting was held at the Hilton Hotel, off Allen Avenue,
+              Ikeja at its inception was to stir up a revival in the heart of
+              believers and the churches, both in Nigeria and beyond. This was
+              accomplished through prayer seminars and conferences.
+            </p>
+            <p>
+              Through the leading of the Lord the church arm of the ministry,
+              called Gospel Power Assembly was born on Sunday, September 18,
+              1994, at Amay House, Odegbami close, Adeniyi Jones, Ikeja, Lagos.
+              The main thrust is to Lead People to Christ and perfect (mature)
+              them in Christ through teaching, training, and discipleship so
+              they could be equipped for the work of the ministry. We are
+              committed to raising faithful, fruitful disciples who are
+              passionate to advance the kingdom of God in communities
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pastor Detail End -->
+
+    <!-- Subscribe Start -->
+
+    <section class="subscribe">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12 col-sm-12">
+            <h3 class="text-white">Let’s Keep in Touch!</h3>
+
+            <p class="text-white">
+              Subscribe to keep up with fresh news and exciting updates.
+            </p>
+          </div>
+
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <form>
+              <input
+                type="text"
+                name="Text"
+                placeholder="Enter Your Email Address..."
+              />
+
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe End -->
+
+    <!-- Footer One Start -->
+    <footer class="gap footer-one no-bottom green-overlay">
+      <div
+        class="parallax"
+        style="background-image: url(assets/images/church/christ_wallpaper.jpg)"
+      ></div>
+
+      <div class="container">
+        <div class="row part-one">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <a href="index.html">
+              <img
+                class="footer-logo"
+                src="assets/images/church/logo.png"
+                alt="footer logo"
+              />
+            </a>
+
+            <p class="text-white">
+              2, Aboaba Aboaba Afilaka Avenue, Ifako Ijaye
+            </p>
+
+            <div class="footer-contact">
+              <p class="text-white">
+                <span class="theme-clr">Telephone:</span> +1 555 1234
+              </p>
+
+              <p class="text-white">
+                <span class="theme-clr">Fax:</span> +1 555 4444
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2 class="text-white">Quick Links</h2>
+
+            <ul class="quick-links">
+              <li><a href="sermons.html">Sermons & Exhortations</a></li>
+
+              <li><a href="our-ministries.html">Our Ministries</a></li>
+
+              <li><a href="events.html">Our Events</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <h2 class="text-white">Recent Sermon</h2>
+
+            <ul class="footer-events">
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/church/events/event1.png"
+                    alt="Event Image"
+                  />
+                </figure>
+
+                <div>
+                  <a href="event-detail.html"
+                    >Domestic Violence and Impact on Ministry</a
+                  >
+
+                  <p class="post-date">Thrusday, june 4, 2021</p>
+                </div>
+              </li>
+
+              <li>
+                <figure>
+                  <img
+                    src="assets/images/church/events/event2.png"
+                    alt="Event Image 2"
+                  />
+                </figure>
+
+                <div>
+                  <a href="event-detail.html"
+                    >Support Groups: May the God Be with</a
+                  >
+
+                  <p class="post-date">Thrusday, june 4, 2021</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copy-right">
+          <div class="social">
+            <ul class="social-medias">
+              <li>
+                <a href="JavaScript:void(0)"
+                  ><img src="assets/images/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+
+              <li>
+                <a href="JavaScript:void(0)"
+                  ><img src="assets/images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+
+              <li>
+                <a href="JavaScript:void(0)"
+                  ><img src="assets/images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-rights">
+            <p class="text-white">
+              © Copyright <span>2022 GPA</span>. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer One End -->
+
+    <!-- Scroll to top -->
+
+    <button id="scrollTop" class="scrollTopStick">
+      <svg viewBox="0 0 490.523 490.523" fill="#fff" height="15">
+        <path
+          style="fill: #ffc107"
+          d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047 c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136 c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z"
+        ></path>
+        <path
+          d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151 c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0 l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z"
+        ></path>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+      </svg>
+    </button>
+
+    <!-- Donation Modal -->
+    <div
+      class="modal fade donation-model"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Donate Now</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="donation-data">
+              <h2>Stand Up the Church Climate Crisis</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                totam rem ape eaque.
+              </p>
+
+              <div class="donation-form">
+                <div class="custom-donation-amount">
+                  <span class="text-white">$</span>
+                  <input
+                    class="donated_amount"
+                    type="number"
+                    placeholder="Custom Amount"
+                  />
+                </div>
+
+                <ul class="list-unstyled aos-init aos-animate">
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >$<span class="donation_amount">5</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >$<span class="donation_amount">10</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >$<span class="donation_amount">20</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >$<span class="donation_amount">30</span></a
+                    >
+                  </li>
+                </ul>
+
+                <a class="theme-btn" href="JavaScript:void(0)">Donate Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jquery -->
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Animate on scroll Js -->
+
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Bootstrap Js -->
+
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js -->
+
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>
