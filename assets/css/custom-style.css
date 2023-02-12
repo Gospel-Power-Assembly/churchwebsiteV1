@@ -1,8 +1,17 @@
 .update-img {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .sermon-img-custom {
   width: auto;
   height: 100px;
+}
+
+.link-wrapper li{
+  margin-left: 2rem ;
+}
+
+.video{
+  width: 100%;
+  height: fit-content;
 }
