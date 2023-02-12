@@ -3590,13 +3590,15 @@ img.sideimage {
     margin: 0;
 }
 .about-us .church-about-img {
-    position: relative;
+    /* position: relative; */
+    right: 100px;
 }
 .about-us .church-about-img img {
-    position: absolute;
+    /* position: absolute; */
     width: 1000px;
-    left: -285px;
-    top: -20px;
+    
+    /* left: -285px; */
+    /* top: -20px; */
 }
 .church-about-img-two {
     position: relative;
