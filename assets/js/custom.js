@@ -372,59 +372,59 @@ jQuery(document).ready(function ($) {
 
 
     // Slider-Causes-Of-Church
-if ($(".slider-causes-of-church")[0]){
-    $('.slider-causes-of-church').slick({
+  if ($(".slider-causes-of-church")[0]){
+      $('.slider-causes-of-church').slick({
 
-        slidesToShow: 3,
+          slidesToShow: 3,
 
-        slidesToScroll: 1,
+          slidesToScroll: 1,
 
-        dots: false,
+          dots: false,
 
-        arrows: false,
+          arrows: false,
 
-        cssEase: 'ease-in-out',
+          cssEase: 'ease-in-out',
 
-        draggable: true,
+          draggable: true,
 
-        autoplay: true,
+          autoplay: true,
 
-        autoplaySpeed: 3000,
+          autoplaySpeed: 3000,
 
-        speed: 1300,
-        responsive: [
+          speed: 1300,
+          responsive: [
 
-                {
+                  {
 
-                  breakpoint: 1030,
+                    breakpoint: 1030,
 
-                  settings: {
+                    settings: {
 
-                    slidesToShow: 2,
+                      slidesToShow: 2,
 
-                    slidesToScroll: 1,
+                      slidesToScroll: 1,
 
-                  }
+                    }
 
-                },
-                {
+                  },
+                  {
 
-                  breakpoint: 600,
+                    breakpoint: 600,
 
-                  settings: {
+                    settings: {
 
-                    slidesToShow: 1,
+                      slidesToShow: 1,
 
-                    slidesToScroll: 1,
+                      slidesToScroll: 1,
 
-                  }
+                    }
 
-                },
+                  },
 
-            ]
+              ]
 
-    });
-}
+      });
+  }
 
 
 
@@ -558,19 +558,32 @@ if ($(".slider-causes-of-church")[0]){
 
             draggable: false,
 
+            autoplay: true,
+            autoplaySpeed: 3000,
+
             waitForAnimate: true,
 
-             lazyLoad: 'ondemand',
+            lazyLoad: 'ondemand',
 
-             fade: false,
+            fade: false,
 
-             speed: 30000
+            speed: 3000
 
         });
     }
 
+    $('.c-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 
+      var img_src = "";
 
+      $('.next-slide.nav-active').removeClass('nav-active');
+
+      $($('.next-slide')[nextSlide]).addClass('nav-active');
+
+      img_src =  $($('.next-slide')[nextSlide]).html();
+
+      $('.slider-main-img').html(img_src);
+    })
 
     // C-Slider
 

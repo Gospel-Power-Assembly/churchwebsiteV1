@@ -555,6 +555,13 @@ table {
     height: 27px;
     fill: white;
 }
+
+.icon img {
+    width: 27px;
+    height: 27px;
+    fill: white;
+}
+
 .sidetwo .icon {
     width: 50px;
     height: 50px;
@@ -3575,6 +3582,9 @@ img.sideimage {
 /* Contact Us End */
 
 /* About Us Start */
+.aboutus {
+    margin-bottom: 100px;
+}
 .about-us .content h2 {
     line-height: 52px;
     margin-bottom: 15px;
@@ -3589,16 +3599,14 @@ img.sideimage {
     width: 85%;
     margin: 0;
 }
-.about-us .church-about-img {
-    /* position: relative; */
-    right: 100px;
+
+.center-around {
+    margin: auto;
 }
+
 .about-us .church-about-img img {
-    /* position: absolute; */
-    width: 1000px;
-    
-    /* left: -285px; */
-    /* top: -20px; */
+    max-width: 100%;
+    height: auto;
 }
 .church-about-img-two {
     position: relative;
