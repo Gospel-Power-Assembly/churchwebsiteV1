@@ -56,14 +56,6 @@
 
 -----------------------------------------------------------------------------------*/
 
-var autoPlayVideo = document.getElementById("ocScreencapVideo");
-autoPlayVideo.oncanplaythrough = function () {
-  autoPlayVideo.muted = true;
-  autoPlayVideo.play();
-  autoPlayVideo.pause();
-  autoPlayVideo.play();
-};
-
 jQuery(document).ready(function ($) {
   "use strict";
 
@@ -457,15 +449,33 @@ jQuery(document).ready(function ($) {
 
       draggable: false,
 
+      autoplay: true,
+      autoplaySpeed: 3000,
+
       waitForAnimate: true,
 
       lazyLoad: "ondemand",
 
       fade: false,
 
-      speed: 30000,
+      speed: 3000,
     });
   }
+
+  $(".c-slider").on(
+    "beforeChange",
+    function (event, slick, currentSlide, nextSlide) {
+      var img_src = "";
+
+      $(".next-slide.nav-active").removeClass("nav-active");
+
+      $($(".next-slide")[nextSlide]).addClass("nav-active");
+
+      img_src = $($(".next-slide")[nextSlide]).html();
+
+      $(".slider-main-img").html(img_src);
+    }
+  );
 
   // C-Slider
 
