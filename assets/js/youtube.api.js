@@ -10,10 +10,23 @@ const userAction = async () => {
   );
   const myJson = await response.json(); //extract JSON from the http response
   // do something with myJson
-  console.log("youtube videos", myJson);
   let videoHtml = "";
   let onevideoHtml = "";
   myJson.items.forEach((item) => {
+    const postDate = new Date(item.snippet.publishedAt);
+    const date =
+      postDate.getDate() +
+      "-" +
+      (postDate.getMonth() + 1) +
+      "-" +
+      postDate.getFullYear();
+
+    var hours = postDate.getHours();
+    var AmOrPm = hours >= 12 ? "pm" : "am";
+    hours = hours % 12 || 12;
+    var minutes = postDate.getMinutes();
+    var time = "Time  - " + hours + ":" + minutes + " " + AmOrPm;
+
     videoHtml += `<div>
             <div class="event">
               <img
@@ -22,8 +35,7 @@ const userAction = async () => {
               />
 
               <div class="event-data">
-                <p class="text-white">Stom Park New York</p>
-
+              
                 <h4>
                   <a href="https://www.youtube.com/watch?v=${item.id.videoId}"
                     >${item.snippet.title}</a
@@ -35,12 +47,11 @@ const userAction = async () => {
                     <img
                       src="assets/images/calendar.svg"
                       alt="calendar 2"
-                    />
+                    />${date}
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 2" />1:00 pm -
-                    2:00 pm
+                    <img src="assets/images/clock.svg" alt="clock 2" />${time}
                   </li>
                 </ul>
               </div>
@@ -93,12 +104,6 @@ const userAction = async () => {
             </div>
 
             <div class="sermon-data">
-              <ul>
-                <li>Jorge karri</li>
-
-                <li>Nov 19, 2021</li>
-              </ul>
-
               <h3>
                 <a href="https://www.youtube.com/watch?v=${myJson.items[0].id.videoId}"
                   >${myJson.items[0].snippet.title}</a
@@ -111,7 +116,10 @@ const userAction = async () => {
             </div>
           </div>`;
 
-  document.getElementById("video-slider").innerHTML = videoHtml;
+  document.getElementById("video-slider").innerHTML =
+    "<div id='video-slider' class='events-carousal-slider'>" +
+    videoHtml +
+    "</div>";
   document.getElementById("one-video-sec").innerHTML = onevideoHtml;
 };
 
