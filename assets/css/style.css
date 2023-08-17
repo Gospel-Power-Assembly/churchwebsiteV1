@@ -1763,7 +1763,7 @@ button.scrollTopStick.active {
     height: 130px;
     display: flex;
     border-radius: 100px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: auto;
     position: relative;
 }
@@ -1778,7 +1778,17 @@ button.scrollTopStick.active {
     position: absolute;
     padding: 15px;
     width: 100%;
+    object-fit: cover;
 }
+.offer img {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    border-radius: 100px;
+    margin: auto;
+    position: relative;
+}
+
 .offer h3 a {
     font-size: 26px;
     color: #333;
