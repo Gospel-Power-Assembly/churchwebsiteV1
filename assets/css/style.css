@@ -1787,6 +1787,7 @@ button.scrollTopStick.active {
     border-radius: 100px;
     margin: auto;
     position: relative;
+    object-fit: cover;
 }
 
 .offer h3 a {
