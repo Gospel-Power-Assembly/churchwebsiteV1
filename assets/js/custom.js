@@ -1123,3 +1123,52 @@ if ($(".audio-player")[0]) {
 }
 
 // Audio Player End
+
+function toggleText() {
+  const textElement = document.querySelector(".text");
+  const readMoreElement = document.querySelector(".read-more");
+
+  if (textElement.style.whiteSpace === "nowrap") {
+    textElement.style.whiteSpace = "normal";
+    textElement.style.overflow = "visible";
+    readMoreElement.textContent = "Read less";
+  } else {
+    textElement.style.whiteSpace = "nowrap";
+    textElement.style.overflow = "hidden";
+    textElement.style.textOverflow = "ellipsis";
+    readMoreElement.textContent = "Read more";
+  }
+}
+
+// Initially check if the text needs to be truncated
+const textElement = document.querySelector(".p-text");
+const readMoreElement = document.querySelector(".read-more");
+if (textElement.scrollWidth > textElement.clientWidth) {
+  readMoreElement.style.display = "block";
+} else {
+  readMoreElement.style.display = "none";
+}
+
+
+    function toggleReadMore() {
+      var truncatedText = document.getElementById("truncatedText");
+      var readMoreBtn = document.querySelector(".read-more-btn");
+
+      if (truncatedText.style.webkitLineClamp === "5") {
+        truncatedText.style.webkitLineClamp = "none";
+        readMoreBtn.textContent = "Read Less";
+      } else {
+        truncatedText.style.webkitLineClamp = "5";
+        readMoreBtn.textContent = "Read More";
+      }
+    }
+
+    // Show the "Read More" button only if the text is truncated
+    window.addEventListener("DOMContentLoaded", function () {
+      var truncatedText = document.getElementById("truncatedText");
+      var readMoreBtn = document.querySelector(".read-more-btn");
+
+      if (truncatedText.scrollHeight > truncatedText.clientHeight) {
+        readMoreBtn.style.display = "block";
+      }
+    });
