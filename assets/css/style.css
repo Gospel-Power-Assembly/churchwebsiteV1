@@ -594,6 +594,10 @@ table {
     left: 0;
 }
 
+.about-parallax {
+    background-position: center bottom !important;
+}
+
 .green-bg {
     background-color: #2e1b46;
     z-index: 0;
@@ -1223,8 +1227,12 @@ button.scrollTopStick.active {
 
 .top-bar {
     padding: 15px 0;
-    border-bottom: 5px solid #d98d39;
-    background-color: #b1712a;
+    border-bottom: 5px solid #413c3a;
+    background-color: #7a6fa7;
+}
+
+#gomsg {
+    margin: 30px 0 30px;
 }
 
 .top-bar .row {
